@@ -10,6 +10,7 @@
     @dump($vestito) --}}
         
     {{-- @endforeach --}}
+    <a href="{{route('Store.create')}}" class='btn btn-primary'>Inserisci Nuovo Prodotto</a>
     <table class="table">
         <thead>
           <tr>
