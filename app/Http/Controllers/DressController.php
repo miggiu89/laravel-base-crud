@@ -62,7 +62,7 @@ class DressController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id) //metodo che ci permette di ottenere il dettaglio di un record della nostra tabella
     {   
         
         if($id){
@@ -72,6 +72,7 @@ class DressController extends Controller
             ];
             return view ('dresses.show', $data);
         }
+        abort(404);
     }
 
     /**
